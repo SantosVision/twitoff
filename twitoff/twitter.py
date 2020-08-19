@@ -1,5 +1,5 @@
 """Retrieve Tweets, embeddings, and persist in the database."""
-from os import getenv
+# from os import getenv
 import basilica
 import tweepy
 from twitoff.models import DB, Tweet, User
@@ -10,11 +10,12 @@ TWITTER_USERS = ['calebhicks', 'elonmusk', 'Anell_R_Santos', 'SteveMartinToGo',
                  'common_squirrel', 'KenJennings', 'conanobrien',
                  'big_ben_clock', 'IAM_SHAKESPEARE']
 
-TWITTER_API_KEY = getenv('TWITTER_API_KEY')
-TWITTER_API_KEY_SECRET = getenv('TWITTER_API_KEY_SECRET')
+TWITTER_API_KEY = 'sG1IV897wXWRvwdB7PM0XrIgP'
+TWITTER_API_KEY_SECRET = '3zgrpDOx09Gx8fcnc4pRbVqcuCRaHMrfXbFhu5Wd9IROZSBdXe'
 TWITTER_AUTH = tweepy.OAuthHandler(TWITTER_API_KEY, TWITTER_API_KEY_SECRET)
 TWITTER = tweepy.API(TWITTER_AUTH)
-BASILICA = basilica.Connection(getenv('BASILICA_KEY'))
+BASILICA = basilica.Connection('2a90b552-6bc6-0546-20ec-4dde1beb69ad')
+
 
 
 def add_or_update_user(username):
