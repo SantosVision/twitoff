@@ -10,11 +10,11 @@ TWITTER_USERS = ['calebhicks', 'elonmusk', 'Anell_R_Santos', 'SteveMartinToGo',
                  'common_squirrel', 'KenJennings', 'conanobrien',
                  'big_ben_clock', 'IAM_SHAKESPEARE']
 
-TWITTER_API_KEY = 'sG1IV897wXWRvwdB7PM0XrIgP'
-TWITTER_API_KEY_SECRET = '3zgrpDOx09Gx8fcnc4pRbVqcuCRaHMrfXbFhu5Wd9IROZSBdXe'
+TWITTER_API_KEY = 'TWITTER_API_KEY'
+TWITTER_API_KEY_SECRET = 'TWITTER_API_KEY_SECRET'
 TWITTER_AUTH = tweepy.OAuthHandler(TWITTER_API_KEY, TWITTER_API_KEY_SECRET)
 TWITTER = tweepy.API(TWITTER_AUTH)
-BASILICA = basilica.Connection('2a90b552-6bc6-0546-20ec-4dde1beb69ad')
+BASILICA = basilica.Connection('BASILICA')
 
 
 
