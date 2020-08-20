@@ -1,5 +1,5 @@
 """Retrieve Tweets, embeddings, and persist in the database."""
-# from os import getenv
+from os import getenv
 import basilica
 import tweepy
 from twitoff.models import DB, Tweet, User
